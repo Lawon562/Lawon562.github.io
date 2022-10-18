@@ -1,13 +1,10 @@
 ---
 title: 타겟으로 이동하는 방법
 author: Lawon562
-date: 2022-10-19
+date: 2022-10-18
 category: Jekyll
 layout: post
 ---
-
-
-
 
 ![Imgur](../assets/Movement/MoveToTarget/Title.png)
 
