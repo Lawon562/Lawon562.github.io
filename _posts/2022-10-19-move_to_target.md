@@ -2,7 +2,7 @@
 title: 타겟으로 이동하는 방법
 author: Lawon562
 date: 2022-10-19
-category: Movement
+category: Jekyll
 layout: post
 ---
 
