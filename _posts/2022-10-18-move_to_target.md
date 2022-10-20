@@ -8,12 +8,14 @@ layout: post
 
 <hr/>
 
-## Player Object를 Target의 위치로 이동시키는 방법에 대해 알아본다.
+<p>Player Object를 Target의 위치로 이동시키는 방법에 대해 알아본다.</p>
 
 ![Player and Object Image](../assets/Movement/MoveToTarget/Title.png)
 
-### 1) Set Position
 <hr/>
+
+### 1) Set Position
+
 
 <p>Player의 position vector를 Target의 position vector로 지정하는 방법.</p>
 
@@ -70,3 +72,10 @@ public class Movement : MonoBehaviour
 
 ![Lerp1](../assets/Movement/MoveToTarget/Lerp1.png)
 
+
+#### 실행 결과
+
+<img src="../assets/Movement/MoveToTarget/Lerp_result.gif" width="800px" height="400px" title="실행 결과" alt="실행 결과"/>
+
+*Movement 스크립트의 t 값에 따라 이동되는 속도가 달라진다. Set Position 방식보다 더 부드럽게 움직이는 것이 특징이다.*
+<hr/>
