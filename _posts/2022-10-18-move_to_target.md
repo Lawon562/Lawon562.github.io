@@ -79,3 +79,41 @@ public class Movement : MonoBehaviour
 
 *Movement 스크립트의 t 값에 따라 이동되는 속도가 달라진다. Set Position 방식보다 더 부드럽게 움직이는 것이 특징이다.*
 <hr/>
+
+
+
+### 3) MoveToward
+
+<p>Player Object 위치와 Target의 위치를 지정된 속도로 일정하게 움직이는 방법</p>
+
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movement_MoveToward : MonoBehaviour
+{
+    public Transform target;
+    public float speed;
+
+
+    void Update()
+    {
+        Vector3 a = transform.position;
+        Vector3 b = target.position;
+        // speed 값으로 일정하게 이동 - 매끄럽지 않음
+        transform.position = Vector3.MoveTowards(a, b, speed);
+    }
+}
+```
+
+![MoveToward1](../assets/Movement/MoveToTarget/Lerp1.png)
+
+
+#### 실행 결과
+
+<img src="../assets/Movement/MoveToTarget/Lerp_result.gif" width="800px" height="400px" title="실행 결과" alt="실행 결과"/>
+
+*Movement 스크립트의 Speed 값에 따라 이동되는 속도가 달라진다. 일정한 속도로 움직이기 때문에 움직임이 매끄럽지 않다.*
+<hr/>
